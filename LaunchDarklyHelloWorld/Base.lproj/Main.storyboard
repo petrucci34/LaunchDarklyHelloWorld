@@ -37,6 +37,9 @@
                             <constraint firstItem="n54-Ii-I82" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rGN-1v-lgT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="featureFlagLabel" destination="n54-Ii-I82" id="LrL-OS-VLA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
