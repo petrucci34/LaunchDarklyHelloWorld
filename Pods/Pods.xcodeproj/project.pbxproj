@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0143288C2F7A804A55B94505C15C4C74 /* LDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57036E56F8E0B9696ADDBE7A57888 /* LDClient.m */; };
+		05A2DDDD3CBEB3113D37F3B1B6870475 /* LDClientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8E2E355B40626D0D629B4381AA45B4 /* LDClientManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E766C862FAE5078A8B8A36460531F7 /* DarklyEventSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE9C88E680A3AD5CC0FD52355069F24 /* DarklyEventSource-dummy.m */; };
+		0FC08E8C762D447495E7EFC0FC5D0ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B6E21045B579E794DDAD724FF2A07F /* Foundation.framework */; };
+		16C14D2C403E70A7B3CB2F443BAB0219 /* DarklyEventSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872F6932E4EAE9F19E9A88FA5E216BA2 /* DarklyEventSource.framework */; };
+		1874D5E23B9D81A1849DE6338B60C16B /* LDPollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC4DE03A6D5808769ADBE346D4BE51 /* LDPollingManager.m */; };
+		245C1CB4D7D11CC38F22501154A9DC10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B6E21045B579E794DDAD724FF2A07F /* Foundation.framework */; };
+		2C214579714D11897AE5B7655F542446 /* LDFlagConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDC29B1CC165EF5EDDB2CB29429CF35 /* LDFlagConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418C8826FB5D2F56B9F6F7E447CD1423 /* LDRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 029466184A03C497BEEE14602586E1A2 /* LDRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4732847D275C5D1E2B4CF219648F982D /* LDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705AB6F2E5644EAB0C3B73F7710E065 /* LDUserModel.m */; };
+		5AFCFE65DF09B214664C347EDB6BECFE /* Pods-LaunchDarklyHelloWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 886940EDEE32330519D250BEE8CA0C3A /* Pods-LaunchDarklyHelloWorld-dummy.m */; };
+		5E32D754940754D34ACBC7A4ABBEAB26 /* DarklyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D17A8A4D56B1F7324C7847C3AA8960 /* DarklyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674D97FF407D89C4FAE911DA418079D4 /* Pods-LaunchDarklyHelloWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E03FF6BDBA42C839E13EA11C9CC34060 /* Pods-LaunchDarklyHelloWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		747EFECC12E371FB8CC7576C787B3087 /* LDDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4171371B8352B9B08B94139A7A523D /* LDDataManager.m */; };
+		86D84BC91C65E1CB9D0262CC97197671 /* LDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9BC3AA2264D4A9E44F33A4B850E657 /* LDConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879E676C73D85EFA5B2F492A76650249 /* DarklyEventSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE6303C0D7F68F73E427F2D8179B7E5 /* DarklyEventSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4BE6D801362793A459B6E2B615A4D2 /* LDUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C294447DDAEBF9F694C0C6A764966C9 /* LDUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D11010BADC3BCAC894440E8FB03FF87 /* LDClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B55C9834C95F7A74FDF717CC9981B6 /* LDClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9548FE109780D0D4D1603EA1D2A9D900 /* LaunchDarkly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3DDED138DEA35AA4FFCB8BBEB7FAFA1 /* LaunchDarkly-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		973878D680FE06BB842DE92997C152E7 /* LDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C5DF4A76EE61DBE0478A3BED1DF752 /* LDRequestManager.m */; };
+		9A2E3D008EAFD8BA4815B0AC3143A451 /* LDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2190C070E96B5534C37808348D6F18 /* LDUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8459C7218A72C7C8F4BB851B3607D89 /* LDPollingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB616E160D55934EF804B6C941E75DC /* LDPollingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF30259FBB0EBE9475109BCAD1C464D /* LDDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF2ED6D8C9948BEC62FD8918C47FE59 /* LDDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B80ED4E3A3451E8620A1612CE13E9916 /* LDUserBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B5F10A3B4D0F8F7FF3ECBFB76520C9 /* LDUserBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8A1AC7A2FE08986E5C6F3EAC1232F0C /* DarklyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D875CB1571C85FEADEBDA16798750A4F /* DarklyConstants.m */; };
+		BB97C177D35E472886D1CA7BFE8C591A /* LaunchDarkly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3418B99B3EF16C8A0A3BC28799EF061 /* LaunchDarkly-dummy.m */; };
+		CB5064378AC01B91A30DDDF1FE5203E6 /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA6F079D84B1E6853822F8BD7307703 /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2892BC14AB64CE73D8818DA7E22D068 /* LDFlagConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E46748250E697812810C907BA558BFC /* LDFlagConfigModel.m */; };
+		D3C9FF281D74135DAAB0C3B0FE9938F4 /* LDEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A52DB107A3E5D0A1582CAF954D1F2CE4 /* LDEventModel.m */; };
+		D4AF98FFF19D64062F62B668B8BCCE7C /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 974706E9E15BD81DD7F372AB7CCF4B4B /* NSDictionary+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD11528E4F8C1B08BBCA2F78F979BA59 /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A55689BABE8B347C5C1A19AA85D4E6A /* EventSource.m */; };
+		DFB721BABD7382437DF2C66C10FF7804 /* LDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F7DCFCBFA0D03DCCEC9A67DA61035 /* LDConfig.m */; };
+		ECACB2817A350338F3B4217D1306307E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5AAA85267D1462D55551A07940DA7 /* NSDictionary+JSON.m */; };
+		F09F8FC9B99A028783330DC841BF2A35 /* LDClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEAA88266AAD2BE86D60D8662C330C /* LDClientManager.m */; };
+		F53A696D0D207A5F97D5BB98F646F4DE /* LDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF1BF63D33E12C358FEC7BFB71C44C9 /* LDUtil.m */; };
+		FABA5B480076CEC30B20FC54BE614FEF /* LDUserBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 878EE05F1D0367F9ACFF72DF30E4811E /* LDUserBuilder.m */; };
+		FC7B90F9FACE6D68611A59E5910C6FBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B6E21045B579E794DDAD724FF2A07F /* Foundation.framework */; };
+		FD366B0C88B4BBD9DA40211FA18F0E41 /* LDEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA56075C235139BDE6E18AED96B5F49 /* LDEventModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00366E519D18C0EC9922C360A05365A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60898E302880C026220795ACB265167;
+			remoteInfo = LaunchDarkly;
+		};
+		11D36FF5BD4B2DE768C66109321AA7B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BBF58D5B3D35A3A10FDDAAADB367B9E;
+			remoteInfo = DarklyEventSource;
+		};
+		421C907054748A2CB595140643077A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BBF58D5B3D35A3A10FDDAAADB367B9E;
+			remoteInfo = DarklyEventSource;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029466184A03C497BEEE14602586E1A2 /* LDRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDRequestManager.h; path = Darkly/LDRequestManager.h; sourceTree = "<group>"; };
+		04F57036E56F8E0B9696ADDBE7A57888 /* LDClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDClient.m; path = Darkly/LDClient.m; sourceTree = "<group>"; };
+		070108E137F92492D74B88690F598B7B /* Pods-LaunchDarklyHelloWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LaunchDarklyHelloWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A55689BABE8B347C5C1A19AA85D4E6A /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = EventSource/EventSource.m; sourceTree = "<group>"; };
+		0AA0FAD75F5BFE3EFF0C425393C10CB6 /* LaunchDarkly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LaunchDarkly.framework; path = LaunchDarkly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDEAA88266AAD2BE86D60D8662C330C /* LDClientManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDClientManager.m; path = Darkly/LDClientManager.m; sourceTree = "<group>"; };
+		10012F86FDA7537329D7D21929E83FA3 /* LaunchDarkly.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LaunchDarkly.xcconfig; sourceTree = "<group>"; };
+		130E4ED7CEC741573B77E4BAA98DE94F /* Pods_LaunchDarklyHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LaunchDarklyHelloWorld.framework; path = "Pods-LaunchDarklyHelloWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE6303C0D7F68F73E427F2D8179B7E5 /* DarklyEventSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarklyEventSource-umbrella.h"; sourceTree = "<group>"; };
+		20B55C9834C95F7A74FDF717CC9981B6 /* LDClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDClient.h; path = Darkly/LDClient.h; sourceTree = "<group>"; };
+		252889D47511C212D8CCA522612D303A /* LaunchDarkly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LaunchDarkly.modulemap; sourceTree = "<group>"; };
+		2FDC29B1CC165EF5EDDB2CB29429CF35 /* LDFlagConfigModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDFlagConfigModel.h; path = Darkly/LDFlagConfigModel.h; sourceTree = "<group>"; };
+		37D17A8A4D56B1F7324C7847C3AA8960 /* DarklyConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DarklyConstants.h; path = Darkly/DarklyConstants.h; sourceTree = "<group>"; };
+		413826CD7D9D79850144F0C431A5393A /* Pods-LaunchDarklyHelloWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LaunchDarklyHelloWorld.modulemap"; sourceTree = "<group>"; };
+		4E46748250E697812810C907BA558BFC /* LDFlagConfigModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDFlagConfigModel.m; path = Darkly/LDFlagConfigModel.m; sourceTree = "<group>"; };
+		4EE5AAA85267D1462D55551A07940DA7 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+JSON.m"; path = "Darkly/NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		5C294447DDAEBF9F694C0C6A764966C9 /* LDUserModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDUserModel.h; path = Darkly/LDUserModel.h; sourceTree = "<group>"; };
+		5E4171371B8352B9B08B94139A7A523D /* LDDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDDataManager.m; path = Darkly/Models/LDDataManager.m; sourceTree = "<group>"; };
+		6760F0B2F86CC66A9805A4B9FAF7CBB9 /* DarklyEventSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DarklyEventSource.framework; path = DarklyEventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A587297E0DBB6D62296AC86E5A7913 /* Pods-LaunchDarklyHelloWorld-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LaunchDarklyHelloWorld-resources.sh"; sourceTree = "<group>"; };
+		6AF2ED6D8C9948BEC62FD8918C47FE59 /* LDDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDDataManager.h; path = Darkly/Models/LDDataManager.h; sourceTree = "<group>"; };
+		6CA6F079D84B1E6853822F8BD7307703 /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = EventSource/EventSource.h; sourceTree = "<group>"; };
+		72A3B6242FC8EDE9F6AC85577D2F39CA /* DarklyEventSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarklyEventSource-prefix.pch"; sourceTree = "<group>"; };
+		73EC6C14BD7F588C85A897F101AD6AEF /* Pods-LaunchDarklyHelloWorld-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LaunchDarklyHelloWorld-frameworks.sh"; sourceTree = "<group>"; };
+		76A107624AA37A53B9F2A3EB02229603 /* Pods-LaunchDarklyHelloWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LaunchDarklyHelloWorld-acknowledgements.plist"; sourceTree = "<group>"; };
+		7705AB6F2E5644EAB0C3B73F7710E065 /* LDUserModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDUserModel.m; path = Darkly/LDUserModel.m; sourceTree = "<group>"; };
+		79ACF8070ECD1811C278D2AAFA48FB2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD30E18BC890B61F59EA57884E9F9B0 /* DarklyEventSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarklyEventSource.xcconfig; sourceTree = "<group>"; };
+		7FA56075C235139BDE6E18AED96B5F49 /* LDEventModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDEventModel.h; path = Darkly/LDEventModel.h; sourceTree = "<group>"; };
+		872F6932E4EAE9F19E9A88FA5E216BA2 /* DarklyEventSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarklyEventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878EE05F1D0367F9ACFF72DF30E4811E /* LDUserBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDUserBuilder.m; path = Darkly/LDUserBuilder.m; sourceTree = "<group>"; };
+		886940EDEE32330519D250BEE8CA0C3A /* Pods-LaunchDarklyHelloWorld-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LaunchDarklyHelloWorld-dummy.m"; sourceTree = "<group>"; };
+		908F7DCFCBFA0D03DCCEC9A67DA61035 /* LDConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDConfig.m; path = Darkly/LDConfig.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		974706E9E15BD81DD7F372AB7CCF4B4B /* NSDictionary+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JSON.h"; path = "Darkly/NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		97B16D9B5785AED9F4B04FAABDF33ED1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CC4DE03A6D5808769ADBE346D4BE51 /* LDPollingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDPollingManager.m; path = Darkly/LDPollingManager.m; sourceTree = "<group>"; };
+		9C8E2E355B40626D0D629B4381AA45B4 /* LDClientManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDClientManager.h; path = Darkly/LDClientManager.h; sourceTree = "<group>"; };
+		A0E5569D5298FCB11819D8C6C6B3CE57 /* LaunchDarkly-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LaunchDarkly-prefix.pch"; sourceTree = "<group>"; };
+		A3418B99B3EF16C8A0A3BC28799EF061 /* LaunchDarkly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LaunchDarkly-dummy.m"; sourceTree = "<group>"; };
+		A3DDED138DEA35AA4FFCB8BBEB7FAFA1 /* LaunchDarkly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LaunchDarkly-umbrella.h"; sourceTree = "<group>"; };
+		A52DB107A3E5D0A1582CAF954D1F2CE4 /* LDEventModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDEventModel.m; path = Darkly/LDEventModel.m; sourceTree = "<group>"; };
+		A53899E51462F51E3EEFF5B467515DD7 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LaunchDarklyHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		AEF1BF63D33E12C358FEC7BFB71C44C9 /* LDUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDUtil.m; path = Darkly/LDUtil.m; sourceTree = "<group>"; };
+		B1B5F10A3B4D0F8F7FF3ECBFB76520C9 /* LDUserBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDUserBuilder.h; path = Darkly/LDUserBuilder.h; sourceTree = "<group>"; };
+		B7565B76D166F2DE302F5DB147993949 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B75E833904BBBBC4993A4A33995228FA /* DarklyEventSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DarklyEventSource.modulemap; sourceTree = "<group>"; };
+		C1B6E21045B579E794DDAD724FF2A07F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D875CB1571C85FEADEBDA16798750A4F /* DarklyConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DarklyConstants.m; path = Darkly/DarklyConstants.m; sourceTree = "<group>"; };
+		DD2190C070E96B5534C37808348D6F18 /* LDUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDUtil.h; path = Darkly/LDUtil.h; sourceTree = "<group>"; };
+		DFB616E160D55934EF804B6C941E75DC /* LDPollingManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDPollingManager.h; path = Darkly/LDPollingManager.h; sourceTree = "<group>"; };
+		E03FF6BDBA42C839E13EA11C9CC34060 /* Pods-LaunchDarklyHelloWorld-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LaunchDarklyHelloWorld-umbrella.h"; sourceTree = "<group>"; };
+		E8E26C0A0455FBC9E32959420D2894EA /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LaunchDarklyHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C5DF4A76EE61DBE0478A3BED1DF752 /* LDRequestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDRequestManager.m; path = Darkly/LDRequestManager.m; sourceTree = "<group>"; };
+		FD9BC3AA2264D4A9E44F33A4B850E657 /* LDConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDConfig.h; path = Darkly/LDConfig.h; sourceTree = "<group>"; };
+		FFE9C88E680A3AD5CC0FD52355069F24 /* DarklyEventSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DarklyEventSource-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C69E3599CB6BC8762774F865A3CBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245C1CB4D7D11CC38F22501154A9DC10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8637B08F21638495E9DCF24D91787D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C14D2C403E70A7B3CB2F443BAB0219 /* DarklyEventSource.framework in Frameworks */,
+				FC7B90F9FACE6D68611A59E5910C6FBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63404C5872AEC8FAD97933321EED4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC08E8C762D447495E7EFC0FC5D0ED5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		373995892BDA89697380639755AF4BA5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				437B939B4111CFB3376C5E70FF36A798 /* Pods-LaunchDarklyHelloWorld */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3FEE43E753462199C799BEB7037DAEF7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97B16D9B5785AED9F4B04FAABDF33ED1 /* Info.plist */,
+				252889D47511C212D8CCA522612D303A /* LaunchDarkly.modulemap */,
+				10012F86FDA7537329D7D21929E83FA3 /* LaunchDarkly.xcconfig */,
+				A3418B99B3EF16C8A0A3BC28799EF061 /* LaunchDarkly-dummy.m */,
+				A0E5569D5298FCB11819D8C6C6B3CE57 /* LaunchDarkly-prefix.pch */,
+				A3DDED138DEA35AA4FFCB8BBEB7FAFA1 /* LaunchDarkly-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LaunchDarkly";
+			sourceTree = "<group>";
+		};
+		437B939B4111CFB3376C5E70FF36A798 /* Pods-LaunchDarklyHelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				B7565B76D166F2DE302F5DB147993949 /* Info.plist */,
+				413826CD7D9D79850144F0C431A5393A /* Pods-LaunchDarklyHelloWorld.modulemap */,
+				070108E137F92492D74B88690F598B7B /* Pods-LaunchDarklyHelloWorld-acknowledgements.markdown */,
+				76A107624AA37A53B9F2A3EB02229603 /* Pods-LaunchDarklyHelloWorld-acknowledgements.plist */,
+				886940EDEE32330519D250BEE8CA0C3A /* Pods-LaunchDarklyHelloWorld-dummy.m */,
+				73EC6C14BD7F588C85A897F101AD6AEF /* Pods-LaunchDarklyHelloWorld-frameworks.sh */,
+				68A587297E0DBB6D62296AC86E5A7913 /* Pods-LaunchDarklyHelloWorld-resources.sh */,
+				E03FF6BDBA42C839E13EA11C9CC34060 /* Pods-LaunchDarklyHelloWorld-umbrella.h */,
+				E8E26C0A0455FBC9E32959420D2894EA /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */,
+				A53899E51462F51E3EEFF5B467515DD7 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */,
+			);
+			name = "Pods-LaunchDarklyHelloWorld";
+			path = "Target Support Files/Pods-LaunchDarklyHelloWorld";
+			sourceTree = "<group>";
+		};
+		4FAD76709E055049F130D75CF6230F62 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B75E833904BBBBC4993A4A33995228FA /* DarklyEventSource.modulemap */,
+				7DD30E18BC890B61F59EA57884E9F9B0 /* DarklyEventSource.xcconfig */,
+				FFE9C88E680A3AD5CC0FD52355069F24 /* DarklyEventSource-dummy.m */,
+				72A3B6242FC8EDE9F6AC85577D2F39CA /* DarklyEventSource-prefix.pch */,
+				1CE6303C0D7F68F73E427F2D8179B7E5 /* DarklyEventSource-umbrella.h */,
+				79ACF8070ECD1811C278D2AAFA48FB2E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DarklyEventSource";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC05B789CAC503C1FA002F262860B973 /* Frameworks */,
+				F5C1B8A42525AE5668B06AC2B6870AD0 /* Pods */,
+				D5EA34018B01323645893A1AD062F8E7 /* Products */,
+				373995892BDA89697380639755AF4BA5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B90BF6EABF32D362A39E8C8FEFFB7A94 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C1B6E21045B579E794DDAD724FF2A07F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BC05B789CAC503C1FA002F262860B973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				872F6932E4EAE9F19E9A88FA5E216BA2 /* DarklyEventSource.framework */,
+				B90BF6EABF32D362A39E8C8FEFFB7A94 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF19787A4A1DF4309D6539E806E717A /* DarklyEventSource */ = {
+			isa = PBXGroup;
+			children = (
+				6CA6F079D84B1E6853822F8BD7307703 /* EventSource.h */,
+				0A55689BABE8B347C5C1A19AA85D4E6A /* EventSource.m */,
+				4FAD76709E055049F130D75CF6230F62 /* Support Files */,
+			);
+			name = DarklyEventSource;
+			path = DarklyEventSource;
+			sourceTree = "<group>";
+		};
+		D5EA34018B01323645893A1AD062F8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6760F0B2F86CC66A9805A4B9FAF7CBB9 /* DarklyEventSource.framework */,
+				0AA0FAD75F5BFE3EFF0C425393C10CB6 /* LaunchDarkly.framework */,
+				130E4ED7CEC741573B77E4BAA98DE94F /* Pods_LaunchDarklyHelloWorld.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9F6ED5CF6EE2FC4A90C1D88A99C8061 /* LaunchDarkly */ = {
+			isa = PBXGroup;
+			children = (
+				37D17A8A4D56B1F7324C7847C3AA8960 /* DarklyConstants.h */,
+				D875CB1571C85FEADEBDA16798750A4F /* DarklyConstants.m */,
+				20B55C9834C95F7A74FDF717CC9981B6 /* LDClient.h */,
+				04F57036E56F8E0B9696ADDBE7A57888 /* LDClient.m */,
+				9C8E2E355B40626D0D629B4381AA45B4 /* LDClientManager.h */,
+				0BDEAA88266AAD2BE86D60D8662C330C /* LDClientManager.m */,
+				FD9BC3AA2264D4A9E44F33A4B850E657 /* LDConfig.h */,
+				908F7DCFCBFA0D03DCCEC9A67DA61035 /* LDConfig.m */,
+				6AF2ED6D8C9948BEC62FD8918C47FE59 /* LDDataManager.h */,
+				5E4171371B8352B9B08B94139A7A523D /* LDDataManager.m */,
+				7FA56075C235139BDE6E18AED96B5F49 /* LDEventModel.h */,
+				A52DB107A3E5D0A1582CAF954D1F2CE4 /* LDEventModel.m */,
+				2FDC29B1CC165EF5EDDB2CB29429CF35 /* LDFlagConfigModel.h */,
+				4E46748250E697812810C907BA558BFC /* LDFlagConfigModel.m */,
+				DFB616E160D55934EF804B6C941E75DC /* LDPollingManager.h */,
+				99CC4DE03A6D5808769ADBE346D4BE51 /* LDPollingManager.m */,
+				029466184A03C497BEEE14602586E1A2 /* LDRequestManager.h */,
+				F6C5DF4A76EE61DBE0478A3BED1DF752 /* LDRequestManager.m */,
+				B1B5F10A3B4D0F8F7FF3ECBFB76520C9 /* LDUserBuilder.h */,
+				878EE05F1D0367F9ACFF72DF30E4811E /* LDUserBuilder.m */,
+				5C294447DDAEBF9F694C0C6A764966C9 /* LDUserModel.h */,
+				7705AB6F2E5644EAB0C3B73F7710E065 /* LDUserModel.m */,
+				DD2190C070E96B5534C37808348D6F18 /* LDUtil.h */,
+				AEF1BF63D33E12C358FEC7BFB71C44C9 /* LDUtil.m */,
+				974706E9E15BD81DD7F372AB7CCF4B4B /* NSDictionary+JSON.h */,
+				4EE5AAA85267D1462D55551A07940DA7 /* NSDictionary+JSON.m */,
+				3FEE43E753462199C799BEB7037DAEF7 /* Support Files */,
+			);
+			name = LaunchDarkly;
+			path = LaunchDarkly;
+			sourceTree = "<group>";
+		};
+		F5C1B8A42525AE5668B06AC2B6870AD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBF19787A4A1DF4309D6539E806E717A /* DarklyEventSource */,
+				E9F6ED5CF6EE2FC4A90C1D88A99C8061 /* LaunchDarkly */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		550D7AD48DEC3659C4B718A6A94D70C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674D97FF407D89C4FAE911DA418079D4 /* Pods-LaunchDarklyHelloWorld-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72261364EE4C98310BE4A775D5FC3B7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E32D754940754D34ACBC7A4ABBEAB26 /* DarklyConstants.h in Headers */,
+				9548FE109780D0D4D1603EA1D2A9D900 /* LaunchDarkly-umbrella.h in Headers */,
+				8D11010BADC3BCAC894440E8FB03FF87 /* LDClient.h in Headers */,
+				05A2DDDD3CBEB3113D37F3B1B6870475 /* LDClientManager.h in Headers */,
+				86D84BC91C65E1CB9D0262CC97197671 /* LDConfig.h in Headers */,
+				AFF30259FBB0EBE9475109BCAD1C464D /* LDDataManager.h in Headers */,
+				FD366B0C88B4BBD9DA40211FA18F0E41 /* LDEventModel.h in Headers */,
+				2C214579714D11897AE5B7655F542446 /* LDFlagConfigModel.h in Headers */,
+				A8459C7218A72C7C8F4BB851B3607D89 /* LDPollingManager.h in Headers */,
+				418C8826FB5D2F56B9F6F7E447CD1423 /* LDRequestManager.h in Headers */,
+				B80ED4E3A3451E8620A1612CE13E9916 /* LDUserBuilder.h in Headers */,
+				8A4BE6D801362793A459B6E2B615A4D2 /* LDUserModel.h in Headers */,
+				9A2E3D008EAFD8BA4815B0AC3143A451 /* LDUtil.h in Headers */,
+				D4AF98FFF19D64062F62B668B8BCCE7C /* NSDictionary+JSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF387ACE7853BFCFDFEC3D63B2DC8FFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879E676C73D85EFA5B2F492A76650249 /* DarklyEventSource-umbrella.h in Headers */,
+				CB5064378AC01B91A30DDDF1FE5203E6 /* EventSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BBF58D5B3D35A3A10FDDAAADB367B9E /* DarklyEventSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B09F35A9E632ABA894A5B4384CAFD76 /* Build configuration list for PBXNativeTarget "DarklyEventSource" */;
+			buildPhases = (
+				63B77566F9B8473CA4B561B990EBDE3B /* Sources */,
+				18C69E3599CB6BC8762774F865A3CBDD /* Frameworks */,
+				EF387ACE7853BFCFDFEC3D63B2DC8FFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarklyEventSource;
+			productName = DarklyEventSource;
+			productReference = 6760F0B2F86CC66A9805A4B9FAF7CBB9 /* DarklyEventSource.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D60898E302880C026220795ACB265167 /* LaunchDarkly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E636AAC6753657724095BB5D4476D921 /* Build configuration list for PBXNativeTarget "LaunchDarkly" */;
+			buildPhases = (
+				705C8B75211FE05066B35B84DA16F6AD /* Sources */,
+				8637B08F21638495E9DCF24D91787D12 /* Frameworks */,
+				72261364EE4C98310BE4A775D5FC3B7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F84F66CCD4BD49F7A506C2DDBD132AEB /* PBXTargetDependency */,
+			);
+			name = LaunchDarkly;
+			productName = LaunchDarkly;
+			productReference = 0AA0FAD75F5BFE3EFF0C425393C10CB6 /* LaunchDarkly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6638710F058EAB10D694A85DD7EF22A /* Pods-LaunchDarklyHelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20C95E59A56D57E4DFB87119544B75EE /* Build configuration list for PBXNativeTarget "Pods-LaunchDarklyHelloWorld" */;
+			buildPhases = (
+				94580F8DD1158D0878FCD6E6E126003B /* Sources */,
+				B63404C5872AEC8FAD97933321EED4CC /* Frameworks */,
+				550D7AD48DEC3659C4B718A6A94D70C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B504920A1764D10133EA39687C714D1 /* PBXTargetDependency */,
+				2DCCD2BDC3F32F4CC0D20F8DD8FEA58C /* PBXTargetDependency */,
+			);
+			name = "Pods-LaunchDarklyHelloWorld";
+			productName = "Pods-LaunchDarklyHelloWorld";
+			productReference = 130E4ED7CEC741573B77E4BAA98DE94F /* Pods_LaunchDarklyHelloWorld.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D5EA34018B01323645893A1AD062F8E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BBF58D5B3D35A3A10FDDAAADB367B9E /* DarklyEventSource */,
+				D60898E302880C026220795ACB265167 /* LaunchDarkly */,
+				D6638710F058EAB10D694A85DD7EF22A /* Pods-LaunchDarklyHelloWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63B77566F9B8473CA4B561B990EBDE3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E766C862FAE5078A8B8A36460531F7 /* DarklyEventSource-dummy.m in Sources */,
+				DD11528E4F8C1B08BBCA2F78F979BA59 /* EventSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705C8B75211FE05066B35B84DA16F6AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A1AC7A2FE08986E5C6F3EAC1232F0C /* DarklyConstants.m in Sources */,
+				BB97C177D35E472886D1CA7BFE8C591A /* LaunchDarkly-dummy.m in Sources */,
+				0143288C2F7A804A55B94505C15C4C74 /* LDClient.m in Sources */,
+				F09F8FC9B99A028783330DC841BF2A35 /* LDClientManager.m in Sources */,
+				DFB721BABD7382437DF2C66C10FF7804 /* LDConfig.m in Sources */,
+				747EFECC12E371FB8CC7576C787B3087 /* LDDataManager.m in Sources */,
+				D3C9FF281D74135DAAB0C3B0FE9938F4 /* LDEventModel.m in Sources */,
+				D2892BC14AB64CE73D8818DA7E22D068 /* LDFlagConfigModel.m in Sources */,
+				1874D5E23B9D81A1849DE6338B60C16B /* LDPollingManager.m in Sources */,
+				973878D680FE06BB842DE92997C152E7 /* LDRequestManager.m in Sources */,
+				FABA5B480076CEC30B20FC54BE614FEF /* LDUserBuilder.m in Sources */,
+				4732847D275C5D1E2B4CF219648F982D /* LDUserModel.m in Sources */,
+				F53A696D0D207A5F97D5BB98F646F4DE /* LDUtil.m in Sources */,
+				ECACB2817A350338F3B4217D1306307E /* NSDictionary+JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580F8DD1158D0878FCD6E6E126003B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFCFE65DF09B214664C347EDB6BECFE /* Pods-LaunchDarklyHelloWorld-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DCCD2BDC3F32F4CC0D20F8DD8FEA58C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LaunchDarkly;
+			target = D60898E302880C026220795ACB265167 /* LaunchDarkly */;
+			targetProxy = 00366E519D18C0EC9922C360A05365A4 /* PBXContainerItemProxy */;
+		};
+		7B504920A1764D10133EA39687C714D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarklyEventSource;
+			target = 1BBF58D5B3D35A3A10FDDAAADB367B9E /* DarklyEventSource */;
+			targetProxy = 421C907054748A2CB595140643077A29 /* PBXContainerItemProxy */;
+		};
+		F84F66CCD4BD49F7A506C2DDBD132AEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarklyEventSource;
+			target = 1BBF58D5B3D35A3A10FDDAAADB367B9E /* DarklyEventSource */;
+			targetProxy = 11D36FF5BD4B2DE768C66109321AA7B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47AFA2DD9FDF1E23BA78AB19D719180B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10012F86FDA7537329D7D21929E83FA3 /* LaunchDarkly.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LaunchDarkly/LaunchDarkly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LaunchDarkly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LaunchDarkly/LaunchDarkly.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LaunchDarkly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A1AE12B78878303F10B2C1CA158CAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10012F86FDA7537329D7D21929E83FA3 /* LaunchDarkly.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LaunchDarkly/LaunchDarkly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LaunchDarkly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LaunchDarkly/LaunchDarkly.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LaunchDarkly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F917F7DB48587A95B4BA6D3E0D4E028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53899E51462F51E3EEFF5B467515DD7 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LaunchDarklyHelloWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LaunchDarklyHelloWorld;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9288E1815EB4EA38426F8D7AD07BE435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E26C0A0455FBC9E32959420D2894EA /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LaunchDarklyHelloWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LaunchDarklyHelloWorld;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A74E7C94F9B27298AAA93D26801C282D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD30E18BC890B61F59EA57884E9F9B0 /* DarklyEventSource.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DarklyEventSource/DarklyEventSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarklyEventSource/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DarklyEventSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D789F9A11CAD80AB2226926F47E93D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD30E18BC890B61F59EA57884E9F9B0 /* DarklyEventSource.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DarklyEventSource/DarklyEventSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarklyEventSource/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DarklyEventSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20C95E59A56D57E4DFB87119544B75EE /* Build configuration list for PBXNativeTarget "Pods-LaunchDarklyHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9288E1815EB4EA38426F8D7AD07BE435 /* Debug */,
+				8F917F7DB48587A95B4BA6D3E0D4E028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B09F35A9E632ABA894A5B4384CAFD76 /* Build configuration list for PBXNativeTarget "DarklyEventSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74E7C94F9B27298AAA93D26801C282D /* Debug */,
+				D789F9A11CAD80AB2226926F47E93D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E636AAC6753657724095BB5D4476D921 /* Build configuration list for PBXNativeTarget "LaunchDarkly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47AFA2DD9FDF1E23BA78AB19D719180B /* Debug */,
+				5A1AE12B78878303F10B2C1CA158CAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -12,6 +12,7 @@
 		77C7D3171E85D982006EEB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C7D3151E85D982006EEB90 /* Main.storyboard */; };
 		77C7D3191E85D982006EEB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C7D3181E85D982006EEB90 /* Assets.xcassets */; };
 		77C7D31C1E85D982006EEB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C7D31A1E85D982006EEB90 /* LaunchScreen.storyboard */; };
+		A5F357511B1AD95E0DB03EF4 /* Pods_LaunchDarklyHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB995A9932CDF076EC7956CF /* Pods_LaunchDarklyHelloWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		77C7D3181E85D982006EEB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C7D31B1E85D982006EEB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C7D31D1E85D982006EEB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB995A9932CDF076EC7956CF /* Pods_LaunchDarklyHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchDarklyHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E090D3A850863601A7269AB5 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchDarklyHelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		FE39566A4561FD573798CCD4 /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchDarklyHelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F357511B1AD95E0DB03EF4 /* Pods_LaunchDarklyHelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				77C7D3101E85D982006EEB90 /* LaunchDarklyHelloWorld */,
 				77C7D30F1E85D982006EEB90 /* Products */,
+				C13E431E0429A40A64EF1557 /* Pods */,
+				7D9A348CB8E4D252BDEEBE12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LaunchDarklyHelloWorld;
 			sourceTree = "<group>";
 		};
+		7D9A348CB8E4D252BDEEBE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB995A9932CDF076EC7956CF /* Pods_LaunchDarklyHelloWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C13E431E0429A40A64EF1557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE39566A4561FD573798CCD4 /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */,
+				E090D3A850863601A7269AB5 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C7D3201E85D982006EEB90 /* Build configuration list for PBXNativeTarget "LaunchDarklyHelloWorld" */;
 			buildPhases = (
+				BEAF83607F4FCD017BAE2F7D /* [CP] Check Pods Manifest.lock */,
 				77C7D30A1E85D982006EEB90 /* Sources */,
 				77C7D30B1E85D982006EEB90 /* Frameworks */,
 				77C7D30C1E85D982006EEB90 /* Resources */,
+				09EE5F4B76482CD42C4FE513 /* [CP] Embed Pods Frameworks */,
+				C82BD55F59FC8EDA99E57E41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09EE5F4B76482CD42C4FE513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEAF83607F4FCD017BAE2F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C82BD55F59FC8EDA99E57E41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchDarklyHelloWorld/Pods-LaunchDarklyHelloWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77C7D30A1E85D982006EEB90 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		77C7D3211E85D982006EEB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE39566A4561FD573798CCD4 /* Pods-LaunchDarklyHelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7D6QB998YJ;
@@ -270,6 +346,7 @@
 		};
 		77C7D3221E85D982006EEB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E090D3A850863601A7269AB5 /* Pods-LaunchDarklyHelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7D6QB998YJ;

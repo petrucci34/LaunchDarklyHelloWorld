@@ -1,0 +1,6 @@
+framework module Pods_LaunchDarklyHelloWorld {
+  umbrella header "Pods-LaunchDarklyHelloWorld-umbrella.h"
+
+  export *
+  module * { export * }
+}
