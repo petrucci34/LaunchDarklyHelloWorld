@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import LaunchDarkly
 
 class ViewController: UIViewController {
+    private let featureFlagKey = "test-feature"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+extension ViewController: ClientDelegate {
+    func featureFlagDidUpdate(_ key: String!) {
+
+    }
+}
