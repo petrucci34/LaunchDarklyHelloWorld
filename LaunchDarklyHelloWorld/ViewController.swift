@@ -12,7 +12,8 @@ import LaunchDarkly
 class ViewController: UIViewController {
     @IBOutlet weak var featureFlagLabel: UILabel!
 
-    fileprivate let featureFlagKey = "test-feature"
+    // Enter your feature flag name here.
+    fileprivate let featureFlagKey = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
